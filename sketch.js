@@ -118,8 +118,7 @@ function draw() {
 
   userRef = "users/user" + indexRef;
   db.ref(userRef).update({
-    co_ords: sPos,
-    turn: 0
+    co_ords: sPos
   });
 }
 
