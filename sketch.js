@@ -64,13 +64,13 @@ function draw() {
       for (var v of Object.values(value)) {
         for (var cords of Object.values(v)) {
           noStroke();
-          if (cords[4] == "eraser") {
-            fill("white");
-            rect(cords[0], cords[1], cords[2], cords[2]);
-          }
           if (cords[4] == "brush") {
             fill(cords[3]);
             ellipse(cords[0], cords[1], cords[2]);
+          }
+          if (cords[4] == "eraser") {
+            fill("white");
+            rect(cords[0], cords[1], cords[2], cords[2]);
           }
         }
       }
